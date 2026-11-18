@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cà phê Di Sản và Lạc Hồng | Bamboo Legacy Kafe</title>
+<meta name="description" content="Cà phê Di Sản và Lạc Hồng của Bamboo Legacy Kafe. Nguyên hạt, bột xay, 5 gói xay sẵn và phin giấy. Ship toàn quốc, có COD.">
+<link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root{
+    --green:#2f4a2c;
+    --green-dark:#223620;
+    --kraft:#d8c3a0;
+    --cream:#fbf6e8;
+    --brown:#6a2a1a;
+    --text:#2b2b24;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Georgia,"Times New Roman",serif;color:var(--text);background:var(--cream);line-height:1.65;font-size:17px}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  header{background:var(--green);color:var(--cream);padding:14px 0}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:bold;letter-spacing:.04em;line-height:1.25}
+  .brand img{width:46px;height:auto;flex:none}
+  .brand small{display:block;font-weight:normal;font-size:12px;opacity:.8;letter-spacing:.08em}
+  .btn{display:inline-block;background:var(--brown);color:#fff;text-decoration:none;padding:12px 22px;border-radius:999px;font-weight:bold;font-family:Arial,Helvetica,sans-serif;font-size:15px}
+  .btn:hover{background:#4f1d11}
+  .btn.light{background:var(--cream);color:var(--green)}
+  .btn.light:hover{background:#fff}
+  .hero{background:var(--kraft);padding:40px 0}
+  .hero .wrap{display:grid;gap:28px;align-items:center}
+  .hero h1{font-size:44px;line-height:1.15;color:var(--brown);letter-spacing:.02em}
+  .hero .tag{font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--green)}
+  .hero p{margin:14px 0 22px;font-size:18px}
+  .hero img{border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+  section{padding:48px 0}
+  h2{font-size:30px;color:var(--green);margin-bottom:10px}
+  .lead{opacity:.85;margin-bottom:26px}
+  .cards{display:grid;gap:18px}
+  .card{background:#fff;border:1px solid #e8dcc0;border-radius:16px;padding:22px}
+  .card h3{color:var(--brown);font-size:22px;margin-bottom:6px}
+  .card .meta{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:var(--green);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
+  .price{margin:12px 0 14px;font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:20px;color:var(--green)}
+  .card img{border-radius:12px;margin-bottom:14px;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 50%}
+  .videos{display:grid;gap:36px}
+  .video-item{text-align:center}
+  .video-item h3{color:var(--brown);font-size:22px;margin-bottom:4px}
+  .video-item>p:not(.video-link){opacity:.85;margin-bottom:16px;font-size:16px}
+  .card .how{display:block;margin-top:12px;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:var(--green);font-weight:bold}
+  .video-item{scroll-margin-top:16px}
+  .video-box{max-width:360px;margin:0 auto;aspect-ratio:9/16;background:#000;border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+  .video-box iframe{width:100%;height:100%;border:0;display:block}
+  .video-link{text-align:center;margin-top:14px;font-family:Arial,Helvetica,sans-serif;font-size:14px}
+  .video-link a{color:var(--green)}
+  .gallery{display:grid;gap:16px}
+  .gallery figure{background:#fff;border:1px solid #e8dcc0;border-radius:16px;overflow:hidden}
+  .gallery img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
+  .gallery figcaption{padding:12px 16px;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:var(--green)}
+  .story{background:var(--green);color:var(--cream);padding:56px 0}
+  .story-card{max-width:760px;margin:0 auto;text-align:center;border:1px solid rgba(216,195,160,.45);border-radius:22px;padding:44px 28px;background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(0,0,0,.12))}
+  .story-kicker{font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--kraft);margin-bottom:16px}
+  .story h2{color:var(--cream);font-size:28px;line-height:1.35;margin-bottom:6px}
+  .story-sep{color:var(--kraft);letter-spacing:.5em;margin:22px 0;font-size:18px}
+  .story-answer{font-size:24px;color:var(--kraft)}
+  .story p{margin:0 auto 14px;max-width:600px;font-size:18px}
+  .story .quote{font-size:28px;line-height:1.35;margin:0 auto 12px;color:var(--kraft);font-weight:bold}
+  .story .quote-sub{font-size:18px;opacity:.9;margin-bottom:28px}
+  .steps{display:grid;gap:14px;counter-reset:s;list-style:none}
+  .steps li{counter-increment:s;background:#fff;border:1px solid #e8dcc0;border-radius:14px;padding:16px 18px 16px 56px;position:relative}
+  .steps li::before{content:counter(s);position:absolute;left:16px;top:14px;width:28px;height:28px;border-radius:50%;background:var(--green);color:#fff;text-align:center;line-height:28px;font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:14px}
+  .cta{background:var(--kraft);text-align:center}
+  .cta p{margin:10px 0 22px}
+  footer{background:var(--green-dark);color:var(--cream);padding:26px 0;text-align:center;font-size:14px;opacity:.95}
+  footer a{text-decoration:underline}
+  .float-zalo{position:fixed;right:16px;bottom:16px;z-index:10;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+  .specs{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e8dcc0;border-radius:14px;overflow:hidden;font-family:Arial,Helvetica,sans-serif;font-size:15px;margin:0 0 26px}
+  .specs th,.specs td{text-align:left;padding:10px 16px;border-bottom:1px solid #efe5cd;vertical-align:top}
+  .specs th{width:38%;color:var(--green);font-weight:bold}
+  .specs tr:last-child th,.specs tr:last-child td{border-bottom:0}
+  .line-title{margin-top:8px}
+  .price small{display:block;font-weight:normal;font-size:13px;opacity:.8;margin-top:2px}
+  .note{font-family:Arial,Helvetica,sans-serif;font-size:14px;opacity:.85;margin-top:14px}
+  .info{display:grid;gap:16px}
+  .info .card h3{font-size:19px}
+  .info .card p{font-size:16px}
+  details{background:#fff;border:1px solid #e8dcc0;border-radius:14px;padding:14px 18px;margin-bottom:10px}
+  summary{cursor:pointer;font-weight:bold;color:var(--green);font-family:Arial,Helvetica,sans-serif;font-size:16px}
+  details p{margin-top:10px;font-size:16px}
+  .cards.two{grid-template-columns:1fr}
+  @media(min-width:760px){.info{grid-template-columns:repeat(3,1fr)}}
+  @media(min-width:760px){
+    .hero .wrap{grid-template-columns:1.1fr .9fr}
+    .hero h1{font-size:60px}
+    .story h2{font-size:34px}
+    .story-card{padding:56px 48px}
+    .cards{grid-template-columns:repeat(3,1fr)}
+    .steps{grid-template-columns:repeat(3,1fr)}
+    .videos{grid-template-columns:1fr 1fr;align-items:start}
+    .gallery{grid-template-columns:1.4fr 1fr;align-items:start}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <img src="logo-sao.png" alt="Logo Bamboo Legacy Kafe">
+      <div>BAMBOO<small>LEGACY KAFE</small></div>
+    </div>
+    <a class="btn light" href="https://zalo.me/0394895371">Nhắn Zalo đặt hàng</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <div class="tag">Vietnam Heritage Coffee</div>
+      <h1>DI SẢN</h1>
+      <p>Cà phê của Bamboo Legacy Kafe, gồm hai dòng Di Sản và Lạc Hồng. Mỗi tách cà phê là một điểm chạm để nhớ về cội nguồn, bản sắc và một hành trình sống có ý nghĩa hơn.</p>
+      <a class="btn" href="#di-san">Dòng Di Sản</a> <a class="btn light" style="background:#fff" href="#lac-hong">Dòng Lạc Hồng</a>
+    </div>
+    <img src="goi-di-san.jpg" alt="Gói cà phê rang xay Di Sản của Bamboo Legacy Kafe">
+  </div>
+</div>
+
+<section class="story" id="cau-chuyen">
+  <div class="wrap">
+    <div class="story-card">
+      <div class="story-kicker">Câu chuyện Di Sản</div>
+      <h2>Điều gì đã khiến một vị vua, sau khi đi qua chiến thắng và vinh quang, lại rời bỏ ngai vàng để lên núi?</h2>
+      <div class="story-sep">* * *</div>
+      <p class="story-answer">Câu hỏi ấy dẫn về <strong>Yên Tử</strong>.</p>
+      <p>Nơi Phật Hoàng Trần Nhân Tông chọn mở ra một con đường sống sâu hơn giữa đời thường.</p>
+      <p>Chính từ tinh thần ấy, Bamboo Legacy Kafe được hình thành, như một cách kể lại những giá trị lịch sử và văn hóa Việt bằng cà phê.</p>
+      <div class="story-sep">* * *</div>
+      <p class="quote">Mỗi dòng cà phê là một câu chuyện di sản.</p>
+      <p class="quote-sub">Mỗi tách cà phê là một điểm chạm để nhớ về cội nguồn, bản sắc và một hành trình sống có ý nghĩa hơn.</p>
+      <a class="btn" href="#san-pham">Khám phá dòng Di Sản</a>
+    </div>
+  </div>
+</section>
+
+<section id="san-pham">
+  <div class="wrap">
+    <h2 class="line-title" id="di-san">Dòng Di Sản</h2>
+    <p class="lead">Điểm chạm chuyển niệm văn hóa Yên Tử. Cà phê hằng ngày, đậm đà và cân bằng.</p>
+    <table class="specs">
+      <tr><th>Thành phần</th><td>70% Robusta, 30% Moka</td></tr>
+      <tr><th>Hương thơm</th><td>Đậm đà, cân bằng</td></tr>
+      <tr><th>Vị</th><td>Chocolate đen, caramel nhẹ</td></tr>
+      <tr><th>Hậu vị</th><td>Kéo dài, ít chua</td></tr>
+      <tr><th>Hợp với</th><td>Dùng hằng ngày</td></tr>
+    </table>
+    <div class="cards">
+      <div class="card">
+        <img src="tui-di-san.jpg" alt="Túi cà phê rang xay Di Sản 250g">
+        <div class="meta">Túi 250g</div>
+        <h3>Nguyên hạt hoặc bột xay</h3>
+        <p>Chọn nguyên hạt để tự xay, hoặc bột xay sẵn để pha ngay bằng phin.</p>
+        <div class="price">149.000đ / 250g</div>
+        <a class="btn" href="https://zalo.me/0394895371">Nhắn Zalo đặt</a>
+        <a class="how" href="#pha-bot-xay">Xem cách pha ›</a>
+      </div>
+      <div class="card">
+        <img src="hai-goi-di-san.jpg" alt="Gói lẻ cà phê Di Sản xay sẵn">
+        <div class="meta">Túi 5 ly</div>
+        <h3>5 gói xay sẵn x 20g</h3>
+        <p>Mỗi gói đổ vào phin là pha đúng 1 ly, 5 gói là 5 ly. Tiện mang đi làm, đi chơi, đi công tác.</p>
+        <div class="price">85.000đ / túi 5 gói</div>
+        <a class="btn" href="https://zalo.me/0394895371">Nhắn Zalo đặt</a>
+        <a class="how" href="#pha-goi-nho">Xem cách pha ›</a>
+      </div>
+      <div class="card">
+        <img src="phin-giay-di-san.jpg" alt="Hộp cà phê phin giấy Di Sản">
+        <div class="meta">Phin giấy</div>
+        <h3>Cà phê phin giấy</h3>
+        <p>Treo phin lên ly, chế nước nóng và chờ nhỏ giọt, không cần dụng cụ. Mỗi gói 12g.</p>
+        <div class="price">Hộp 5 gói: 109.000đ<small>Hộp 10 gói: 189.000đ</small></div>
+        <a class="btn" href="https://zalo.me/0394895371">Nhắn Zalo đặt</a>
+      </div>
+    </div>
+
+    <h2 class="line-title" id="lac-hong" style="margin-top:56px">Dòng Lạc Hồng</h2>
+    <p class="lead">Tinh hoa đất Việt, khí chất Đông Sơn. 100% Arabica Cầu Đất, rang nhẹ (light).</p>
+    <table class="specs">
+      <tr><th>Thành phần</th><td>100% Arabica Cầu Đất (Lâm Đồng)</td></tr>
+      <tr><th>Độ cao</th><td>1.550 m</td></tr>
+      <tr><th>Sơ chế</th><td>Sơ chế ướt (washed)</td></tr>
+      <tr><th>Mức rang</th><td>Rang nhẹ (light)</td></tr>
+      <tr><th>Hương vị</th><td>Ngũ cốc, hạt, trái cây khô, hậu vị cam sáng nhẹ</td></tr>
+      <tr><th>Cảm nhận</th><td>Thanh, sạch, dễ chịu</td></tr>
+    </table>
+    <div class="cards">
+      <div class="card">
+        <img src="tui-lac-hong-250g.jpg" alt="Túi cà phê rang xay Lạc Hồng 250g">
+        <div class="meta">Túi 250g</div>
+        <h3>Nguyên hạt hoặc bột xay</h3>
+        <p>Chọn nguyên hạt để tự xay, hoặc bột xay sẵn để pha ngay.</p>
+        <div class="price">229.000đ / 250g</div>
+        <a class="btn" href="https://zalo.me/0394895371">Nhắn Zalo đặt</a>
+      </div>
+      <div class="card">
+        <img src="goi-le-lac-hong.jpg" alt="Gói lẻ cà phê Lạc Hồng xay sẵn đổ vào phin">
+        <div class="meta">Túi 5 ly</div>
+        <h3>5 gói xay sẵn x 20g</h3>
+        <p>Mỗi gói đổ vào phin là pha đúng 1 ly, 5 gói là 5 ly.</p>
+        <div class="price">119.000đ / túi 5 gói</div>
+        <a class="btn" href="https://zalo.me/0394895371">Nhắn Zalo đặt</a>
+      </div>
+      <div class="card">
+        <img src="phin-giay-lac-hong.jpg" alt="Hộp cà phê phin giấy Lạc Hồng">
+        <div class="meta">Phin giấy</div>
+        <h3>Cà phê phin giấy</h3>
+        <p>Treo phin lên ly, chế nước nóng và chờ nhỏ giọt. Mỗi gói 12g.</p>
+        <div class="price">Hộp 5 gói: 129.000đ<small>Hộp 10 gói: 229.000đ</small></div>
+        <a class="btn" href="https://zalo.me/0394895371">Nhắn Zalo đặt</a>
+      </div>
+    </div>
+    <h3 class="line-title">Combo hộp quà</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="hop-qua-combo.jpg" alt="Hộp quà xanh Di Sản gồm cà phê rang xay, phin và hạt macca Langfarm">
+        <div class="meta">Quà tặng</div>
+        <h3>Hộp quà Di Sản</h3>
+        <p>Hộp xanh có quai xách: túi cà phê Di Sản rang xay 250g, phin Bamboo và hũ hạt macca Langfarm 200g, kèm thiệp cảm ơn và story card.</p>
+        <div class="price">499.000đ / hộp</div>
+        <a class="btn" href="https://zalo.me/0394895371">Nhắn Zalo đặt</a>
+      </div>
+    </div>
+    <p class="note">Ship toàn quốc, thanh toán khi nhận hàng hoặc chuyển khoản.</p>
+  </div>
+</section>
+
+<section id="huong-dan" style="padding-top:0">
+  <div class="wrap">
+    <h2>Hướng dẫn pha cà phê Di Sản</h2>
+    <p class="lead">Hai cách pha đơn giản tại nhà. Xem video để pha đúng cách.</p>
+    <div class="videos">
+      <div class="video-item" id="pha-bot-xay">
+        <h3>Pha phin bằng bột xay</h3>
+        <p>Dùng bột xay và bộ dụng cụ đính kèm của Bamboo.</p>
+        <div class="video-box">
+          <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F25412641505029921%2F&amp;show_text=false&amp;width=360" title="Hướng dẫn pha cà phê phin bằng bột xay cùng Bamboo" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" loading="lazy"></iframe>
+        </div>
+        <p class="video-link"><a href="https://www.facebook.com/reel/25412641505029921/" target="_blank" rel="noopener">Không xem được? Mở video trên Facebook</a></p>
+      </div>
+      <div class="video-item" id="pha-goi-nho">
+        <h3>Pha bằng gói nhỏ tiện dụng</h3>
+        <p>Dùng 5 gói xay sẵn x 20g, mỗi gói pha 1 ly.</p>
+        <div class="video-box">
+          <iframe src="https://www.youtube.com/embed/2k7w4Y8WPvg?rel=0" title="Hướng dẫn pha cà phê bằng gói nhỏ tiện dụng của Bamboo" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <p class="video-link"><a href="https://youtube.com/shorts/2k7w4Y8WPvg" target="_blank" rel="noopener">Không xem được? Mở video trên YouTube</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Hình ảnh sản phẩm</h2>
+    <p class="lead">Bao bì giấy kraft in tranh Yên Tử, mang tinh thần của một dòng cà phê di sản.</p>
+    <div class="gallery">
+      <figure>
+        <img src="hai-goi-di-san.jpg" alt="Hai gói cà phê Di Sản cùng hạt cà phê rang">
+        <figcaption>Gói lẻ Di Sản: mỗi gói pha 1 ly</figcaption>
+      </figure>
+      <figure>
+        <img src="bo-qua-di-san.jpg" alt="Hộp quà Cà phê Di Sản kèm phin pha Bamboo" style="height:auto;aspect-ratio:2/3">
+        <figcaption>Cà phê Di Sản + phin pha</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Đặt hàng đơn giản</h2>
+    <p class="lead">Giao toàn quốc, có thanh toán khi nhận hàng (COD).</p>
+    <ol class="steps">
+      <li><strong>Nhắn Zalo</strong><br>Chọn dòng cà phê, dạng sản phẩm và số lượng bạn muốn.</li>
+      <li><strong>Gửi địa chỉ nhận hàng</strong><br>Bamboo xác nhận đơn và phí giao hàng.</li>
+      <li><strong>Nhận hàng, thanh toán</strong><br>Thanh toán khi nhận (COD) hoặc chuyển khoản trước.</li>
+    </ol>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Giao hàng, thanh toán, đổi trả</h2>
+    <div class="info">
+      <div class="card">
+        <h3>Giao hàng</h3>
+        <p>Giao toàn quốc, trong vòng 5 ngày. <strong>Miễn phí ship nội thành TP.HCM</strong>, các khu vực khác phí 20.000đ.</p>
+      </div>
+      <div class="card">
+        <h3>Thanh toán</h3>
+        <p>Thanh toán khi nhận hàng (COD), hoặc chuyển khoản. Nhắn Zalo để nhận số tài khoản.</p>
+      </div>
+      <div class="card">
+        <h3>Đổi trả</h3>
+        <p>Hàng lỗi do vận chuyển hoặc đóng gói được đổi mới. Chụp ảnh gửi Zalo để Bamboo hỗ trợ.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Câu hỏi thường gặp</h2>
+    <details><summary>Túi 5 ly khác phin giấy thế nào?</summary><p>Túi 5 ly là 5 gói bột xay sẵn, mỗi gói 20g, đổ vào phin pha đúng 1 ly, cần có phin. Phin giấy là mỗi gói 12g có phễu giấy, treo lên ly và chế nước, không cần phin.</p></details>
+    <details><summary>Nguyên hạt và bột xay có khác giá không?</summary><p>Không. Cùng dòng, cùng trọng lượng thì cùng giá.</p></details>
+    <details><summary>Khi nào mình nhận được hàng?</summary><p>Trong vòng 5 ngày kể từ khi xác nhận đơn.</p></details>
+    <details><summary>Bảo quản cà phê thế nào?</summary><p>Đóng kín sau khi mở, để nơi khô ráo, thoáng mát, tránh ánh sáng trực tiếp và nơi ẩm. Hạn dùng 12 tháng kể từ ngày sản xuất (Di Sản).</p></details>
+    <details><summary>Mình muốn mua số lượng lớn hoặc làm quà tặng?</summary><p>Nhắn Zalo để Bamboo tư vấn riêng.</p></details>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Sẵn sàng thử một ly cà phê di sản Việt?</h2>
+    <p>Nhắn Zalo <strong>0394 895 371</strong> để được tư vấn và đặt hàng.</p>
+    <a class="btn" href="https://zalo.me/0394895371">Nhắn Zalo ngay</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Bamboo Legacy Kafe · Di Sản và Lạc Hồng<br>
+    Zalo: <a href="https://zalo.me/0394895371">0394 895 371</a> · bamboolegacy.com
+  </div>
+</footer>
+
+<a class="btn float-zalo" href="https://zalo.me/0394895371">Nhắn Zalo</a>
+
+</body>
+</html>
